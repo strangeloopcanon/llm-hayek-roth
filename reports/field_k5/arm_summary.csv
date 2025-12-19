@@ -1,0 +1,9 @@
+category,arm,match_rate,match_rate_se,net_welfare,net_welfare_se,reciprocity_obs,reciprocity_obs_se
+easy,standard_search,0.735,0.006,0.467,0.007,0.366,0.006
+easy,standard_central,0.729,0.008,0.468,0.007,0.369,0.005
+easy,ai_search,0.743,0.008,0.472,0.009,0.368,0.006
+easy,ai_central,0.735,0.009,0.474,0.006,0.374,0.006
+hard,standard_search,0.653,0.007,0.296,0.007,0.196,0.005
+hard,standard_central,0.5,0.006,0.239,0.005,0.18,0.003
+hard,ai_search,0.662,0.007,0.305,0.007,0.212,0.004
+hard,ai_central,0.55,0.009,0.271,0.006,0.215,0.004

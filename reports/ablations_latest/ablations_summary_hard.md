@@ -1,0 +1,10 @@
+| category | arm | mode | mechanism | match_rate | match_rate_se | d_hat_i | d_hat_j | total_value_per_customer | attention_per_customer | net_welfare_per_customer | llm_input_tokens | llm_output_tokens |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| hard | form_top3_search | form_top3 | search | 0.601 | 0.005 | 0.792 | 0.797 | 0.403 | 15.479 | -3.467 | 0 | 0 |
+| hard | form_top3_central | form_top3 | central | 0.503 | 0.005 | 0.792 | 0.797 | 0.34 | 10.0 | -2.16 | 0 | 0 |
+| hard | free_text_rules_search | free_text_rules | search | 0.596 | 0.005 | 0.64 | 0.631 | 0.397 | 17.832 | -4.061 | 0 | 0 |
+| hard | free_text_rules_central | free_text_rules | central | 0.272 | 0.005 | 0.64 | 0.631 | 0.183 | 10.0 | -2.317 | 0 | 0 |
+| hard | free_text_gpt_search | free_text_gpt | search | 0.603 | 0.005 | 0.738 | 0.725 | 0.403 | 15.94 | -3.581 | 3884 | 2586 |
+| hard | free_text_gpt_central | free_text_gpt | central | 0.44 | 0.005 | 0.738 | 0.725 | 0.297 | 10.0 | -2.203 | 3884 | 2586 |
+| hard | chat_gpt_search | chat_gpt | search | 0.601 | 0.005 | 0.801 | 0.8 | 0.403 | 15.46 | -3.462 | 11210 | 2117 |
+| hard | chat_gpt_central | chat_gpt | central | 0.503 | 0.005 | 0.801 | 0.8 | 0.34 | 10.0 | -2.16 | 11210 | 2117 |

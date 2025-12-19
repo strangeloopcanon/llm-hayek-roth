@@ -1,0 +1,55 @@
+[project]
+name = "econ-llm-preferences-experiment"
+version = "0.1.0"
+description = "Preference density + mechanism experiment with GPT-5.2 elicitation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "bandit>=1.7.10,<2",
+  "detect-secrets>=1.5.0,<2",
+  "mypy>=1.13.0,<2",
+  "pytest>=8.3.3,<9",
+  "pytest-cov>=6.0.0,<7",
+  "ruff>=0.8.4,<1",
+]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests", "tests_llm_live"]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+markers = [
+  "llm_live: hits the real OpenAI API (skipped without OPENAI_API_KEY)",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["econ_llm_preferences_experiment"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
+skip_covered = true
+
+[tool.mypy]
+python_version = "3.11"
+mypy_path = "src"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+check_untyped_defs = true
+ignore_missing_imports = true
+

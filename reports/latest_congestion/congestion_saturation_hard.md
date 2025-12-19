@@ -1,0 +1,7 @@
+| category | saturation | match_rate_all | match_rate_all_se | match_rate_treated | match_rate_treated_se | match_rate_control | match_rate_control_se | mean_days_to_match_all | messages_sent_per_customer | inbox_per_provider_per_day | provider_response_rate | overload_rate_provider_days | net_welfare_per_customer | net_welfare_per_customer_se |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| hard | 0.0 | 0.67 | 0.007 | 0.0 | 0.0 | 0.67 | 0.007 | 3.18 | 8.875 | 2.536 | 0.228 | 0.066 | 0.249 | 0.006 |
+| hard | 0.25 | 0.674 | 0.009 | 0.825 | 0.013 | 0.623 | 0.011 | 2.919 | 12.148 | 3.471 | 0.207 | 0.214 | 0.183 | 0.009 |
+| hard | 0.5 | 0.555 | 0.008 | 0.592 | 0.012 | 0.518 | 0.009 | 2.985 | 19.214 | 5.49 | 0.136 | 0.456 | -0.03 | 0.008 |
+| hard | 0.75 | 0.303 | 0.01 | 0.269 | 0.013 | 0.406 | 0.014 | 3.142 | 29.143 | 8.327 | 0.054 | 0.561 | -0.383 | 0.011 |
+| hard | 1.0 | 0.143 | 0.006 | 0.143 | 0.006 | 0.0 | 0.0 | 1.901 | 37.046 | 10.584 | 0.02 | 0.57 | -0.634 | 0.007 |

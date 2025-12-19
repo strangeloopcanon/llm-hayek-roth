@@ -1,0 +1,6 @@
+{
+  "note": "Calibration evaluates a baseline with perfect compliance to reduce noise.",
+  "compliance_ai": 1.0,
+  "contamination_ai_in_control": 0.0,
+  "compliance_central": 1.0
+}

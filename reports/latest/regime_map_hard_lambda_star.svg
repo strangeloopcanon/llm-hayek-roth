@@ -1,0 +1,95 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='560' height='570'>
+<style>
+text{font-family: ui-sans-serif, system-ui; fill:#111827;}
+.title{font-size:18px; font-weight:700}
+.axis{font-size:12px; fill:#111827}
+.celltext{font-size:12px; fill:#111827}
+</style>
+<text class='title' x='120' y='28'>ROI boundary λ*: central beats search if λ > λ* (category=hard)</text>
+<text class='axis' x='120' y='48'>x: k_I (customer elicitation)</text>
+<text class='axis' x='10' y='48'>y: k_J (provider elicitation)</text>
+<text class='axis' x='110' y='95.0' text-anchor='end' dominant-baseline='middle'>1</text>
+<rect x='120' y='60' width='70' height='70' fill='#2b67ec' stroke='#e5e7eb'/>
+<text class='celltext' x='155.0' y='95.0' text-anchor='middle' dominant-baseline='middle'>0.014</text>
+<rect x='190' y='60' width='70' height='70' fill='#2d68ec' stroke='#e5e7eb'/>
+<text class='celltext' x='225.0' y='95.0' text-anchor='middle' dominant-baseline='middle'>0.014</text>
+<rect x='260' y='60' width='70' height='70' fill='#306bec' stroke='#e5e7eb'/>
+<text class='celltext' x='295.0' y='95.0' text-anchor='middle' dominant-baseline='middle'>0.014</text>
+<rect x='330' y='60' width='70' height='70' fill='#2c68ec' stroke='#e5e7eb'/>
+<text class='celltext' x='365.0' y='95.0' text-anchor='middle' dominant-baseline='middle'>0.014</text>
+<rect x='400' y='60' width='70' height='70' fill='#2b67ec' stroke='#e5e7eb'/>
+<text class='celltext' x='435.0' y='95.0' text-anchor='middle' dominant-baseline='middle'>0.014</text>
+<rect x='470' y='60' width='70' height='70' fill='#2b68ec' stroke='#e5e7eb'/>
+<text class='celltext' x='505.0' y='95.0' text-anchor='middle' dominant-baseline='middle'>0.014</text>
+<text class='axis' x='110' y='165.0' text-anchor='end' dominant-baseline='middle'>2</text>
+<rect x='120' y='130' width='70' height='70' fill='#2e69ec' stroke='#e5e7eb'/>
+<text class='celltext' x='155.0' y='165.0' text-anchor='middle' dominant-baseline='middle'>0.014</text>
+<rect x='190' y='130' width='70' height='70' fill='#4479ee' stroke='#e5e7eb'/>
+<text class='celltext' x='225.0' y='165.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='260' y='130' width='70' height='70' fill='#497cee' stroke='#e5e7eb'/>
+<text class='celltext' x='295.0' y='165.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='330' y='130' width='70' height='70' fill='#457aee' stroke='#e5e7eb'/>
+<text class='celltext' x='365.0' y='165.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='400' y='130' width='70' height='70' fill='#4378ee' stroke='#e5e7eb'/>
+<text class='celltext' x='435.0' y='165.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='470' y='130' width='70' height='70' fill='#4278ee' stroke='#e5e7eb'/>
+<text class='celltext' x='505.0' y='165.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<text class='axis' x='110' y='235.0' text-anchor='end' dominant-baseline='middle'>3</text>
+<rect x='120' y='200' width='70' height='70' fill='#2865eb' stroke='#e5e7eb'/>
+<text class='celltext' x='155.0' y='235.0' text-anchor='middle' dominant-baseline='middle'>0.014</text>
+<rect x='190' y='200' width='70' height='70' fill='#457aee' stroke='#e5e7eb'/>
+<text class='celltext' x='225.0' y='235.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='260' y='200' width='70' height='70' fill='#487cee' stroke='#e5e7eb'/>
+<text class='celltext' x='295.0' y='235.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='330' y='200' width='70' height='70' fill='#467bee' stroke='#e5e7eb'/>
+<text class='celltext' x='365.0' y='235.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='400' y='200' width='70' height='70' fill='#4479ee' stroke='#e5e7eb'/>
+<text class='celltext' x='435.0' y='235.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='470' y='200' width='70' height='70' fill='#4479ee' stroke='#e5e7eb'/>
+<text class='celltext' x='505.0' y='235.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<text class='axis' x='110' y='305.0' text-anchor='end' dominant-baseline='middle'>4</text>
+<rect x='120' y='270' width='70' height='70' fill='#2663eb' stroke='#e5e7eb'/>
+<text class='celltext' x='155.0' y='305.0' text-anchor='middle' dominant-baseline='middle'>0.014</text>
+<rect x='190' y='270' width='70' height='70' fill='#457aee' stroke='#e5e7eb'/>
+<text class='celltext' x='225.0' y='305.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='260' y='270' width='70' height='70' fill='#477cee' stroke='#e5e7eb'/>
+<text class='celltext' x='295.0' y='305.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='330' y='270' width='70' height='70' fill='#457aee' stroke='#e5e7eb'/>
+<text class='celltext' x='365.0' y='305.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='400' y='270' width='70' height='70' fill='#4479ee' stroke='#e5e7eb'/>
+<text class='celltext' x='435.0' y='305.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='470' y='270' width='70' height='70' fill='#4479ee' stroke='#e5e7eb'/>
+<text class='celltext' x='505.0' y='305.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<text class='axis' x='110' y='375.0' text-anchor='end' dominant-baseline='middle'>5</text>
+<rect x='120' y='340' width='70' height='70' fill='#2563eb' stroke='#e5e7eb'/>
+<text class='celltext' x='155.0' y='375.0' text-anchor='middle' dominant-baseline='middle'>0.014</text>
+<rect x='190' y='340' width='70' height='70' fill='#4479ee' stroke='#e5e7eb'/>
+<text class='celltext' x='225.0' y='375.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='260' y='340' width='70' height='70' fill='#497dee' stroke='#e5e7eb'/>
+<text class='celltext' x='295.0' y='375.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='330' y='340' width='70' height='70' fill='#457aee' stroke='#e5e7eb'/>
+<text class='celltext' x='365.0' y='375.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='400' y='340' width='70' height='70' fill='#4479ee' stroke='#e5e7eb'/>
+<text class='celltext' x='435.0' y='375.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='470' y='340' width='70' height='70' fill='#447aee' stroke='#e5e7eb'/>
+<text class='celltext' x='505.0' y='375.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<text class='axis' x='110' y='445.0' text-anchor='end' dominant-baseline='middle'>6</text>
+<rect x='120' y='410' width='70' height='70' fill='#2563eb' stroke='#e5e7eb'/>
+<text class='celltext' x='155.0' y='445.0' text-anchor='middle' dominant-baseline='middle'>0.014</text>
+<rect x='190' y='410' width='70' height='70' fill='#4479ee' stroke='#e5e7eb'/>
+<text class='celltext' x='225.0' y='445.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='260' y='410' width='70' height='70' fill='#497dee' stroke='#e5e7eb'/>
+<text class='celltext' x='295.0' y='445.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='330' y='410' width='70' height='70' fill='#457aee' stroke='#e5e7eb'/>
+<text class='celltext' x='365.0' y='445.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='400' y='410' width='70' height='70' fill='#4479ee' stroke='#e5e7eb'/>
+<text class='celltext' x='435.0' y='445.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<rect x='470' y='410' width='70' height='70' fill='#447aee' stroke='#e5e7eb'/>
+<text class='celltext' x='505.0' y='445.0' text-anchor='middle' dominant-baseline='middle'>0.012</text>
+<text class='axis' x='155.0' y='502.0' text-anchor='middle'>1</text>
+<text class='axis' x='225.0' y='502.0' text-anchor='middle'>2</text>
+<text class='axis' x='295.0' y='502.0' text-anchor='middle'>3</text>
+<text class='axis' x='365.0' y='502.0' text-anchor='middle'>4</text>
+<text class='axis' x='435.0' y='502.0' text-anchor='middle'>5</text>
+<text class='axis' x='505.0' y='502.0' text-anchor='middle'>6</text>
+</svg>

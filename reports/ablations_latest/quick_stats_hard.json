@@ -1,0 +1,6 @@
+{
+  "bits_uplift_central": -0.15700000000000003,
+  "llm_parse_uplift_central": 0.11400000000000032,
+  "agent_uplift_central": 0.042999999999999705,
+  "llm_parse_uplift_search": 0.48
+}

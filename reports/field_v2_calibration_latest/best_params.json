@@ -1,0 +1,12 @@
+{
+  "base_markup": 0.2224052384618378,
+  "budget_markup": 0.13975265738988718,
+  "demand_markup": 0.1624804168911349,
+  "cancel_base": 0.05852798461676931,
+  "provider_weekly_capacity": 6,
+  "provider_daily_screen_cap": 11,
+  "accept_threshold": 0.22031120201470517,
+  "idiosyncratic_noise_sd": 0.06938035118101465,
+  "value_scale_easy": 680.5184044874227,
+  "value_scale_hard": 1436.5130217656442
+}

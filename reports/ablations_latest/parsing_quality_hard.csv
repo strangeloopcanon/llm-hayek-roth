@@ -1,0 +1,9 @@
+category,mode,side,mean_l1,top1_accuracy
+hard,form_top3,customer,0.2165,0.733
+hard,form_top3,provider,0.1915,0.833
+hard,free_text_rules,customer,0.9884,0.2
+hard,free_text_rules,provider,1.0452,0.167
+hard,free_text_gpt,customer,0.4437,0.633
+hard,free_text_gpt,provider,0.5427,0.733
+hard,chat_gpt,customer,0.1311,0.733
+hard,chat_gpt,provider,0.1546,0.833

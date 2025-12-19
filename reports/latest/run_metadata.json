@@ -1,0 +1,84 @@
+{
+  "replications": 200,
+  "seed": 7,
+  "market_params": {
+    "n_customers": 30,
+    "n_providers": 30,
+    "epsilon": 0.1,
+    "accept_threshold": 0.25,
+    "idiosyncratic_noise_sd": 0.08
+  },
+  "attention_cost": 0.01,
+  "model": "gpt-5.2",
+  "base_url": "https://api.openai.com/v1",
+  "category_easy": {
+    "category": "easy",
+    "seed": 7,
+    "replications": 200,
+    "n_customers": 30,
+    "n_providers": 30,
+    "dimensions": [
+      "price_sensitivity",
+      "quality_focus",
+      "speed_urgency",
+      "communication_fit",
+      "weirdness_tolerance",
+      "schedule_flexibility"
+    ],
+    "accept_threshold": 0.25,
+    "epsilon": 0.1,
+    "attention_cost": 0.01,
+    "effects": {
+      "category": "easy",
+      "d_hat_I_ai_minus_standard": -0.0006055555555555575,
+      "d_hat_I_ai_minus_standard_se": 0.00019766574722754587,
+      "d_hat_J_ai_minus_standard": 0.001511111111111113,
+      "d_hat_J_ai_minus_standard_se": 0.0002520515734077033,
+      "match_rate_did": 0.000999999999999999,
+      "match_rate_did_se": 0.0015835206624614073,
+      "net_welfare_did": 0.0005749220403549038,
+      "net_welfare_did_se": 0.0010445085219869784
+    }
+  },
+  "category_hard": {
+    "category": "hard",
+    "seed": 7,
+    "replications": 200,
+    "n_customers": 30,
+    "n_providers": 30,
+    "dimensions": [
+      "price_sensitivity",
+      "quality_focus",
+      "speed_urgency",
+      "communication_fit",
+      "weirdness_tolerance",
+      "schedule_flexibility"
+    ],
+    "accept_threshold": 0.25,
+    "epsilon": 0.1,
+    "attention_cost": 0.01,
+    "effects": {
+      "category": "hard",
+      "d_hat_I_ai_minus_standard": 0.00647222222222222,
+      "d_hat_I_ai_minus_standard_se": 0.0004216250662700542,
+      "d_hat_J_ai_minus_standard": 0.005027777777777775,
+      "d_hat_J_ai_minus_standard_se": 0.00042466727906597627,
+      "match_rate_did": 0.002500000000000001,
+      "match_rate_did_se": 0.0024205695395069886,
+      "net_welfare_did": 0.0015341685798317913,
+      "net_welfare_did_se": 0.0016043702522721608
+    }
+  },
+  "interaction": {
+    "easy": {
+      "match_rate_interaction": 0.0010000000000000009,
+      "central_minus_search_standard": -0.181,
+      "central_minus_search_ai": -0.18
+    },
+    "hard": {
+      "match_rate_interaction": 0.0030000000000000027,
+      "central_minus_search_standard": -0.193,
+      "central_minus_search_ai": -0.19
+    }
+  }
+}

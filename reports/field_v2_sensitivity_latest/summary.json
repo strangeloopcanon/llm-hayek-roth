@@ -1,0 +1,44 @@
+{
+  "n_runs": 72,
+  "pos_share_triple_welfare": 0.6111111111111112,
+  "sig_share_triple_welfare_p05": 0.1388888888888889,
+  "triple_welfare_p10": -6.2949,
+  "triple_welfare_p50": 2.7297,
+  "triple_welfare_p90": 14.1304,
+  "defaults": {
+    "cities": 40,
+    "weeks": 2,
+    "jobs_easy": 30,
+    "jobs_hard": 30,
+    "providers": 45
+  },
+  "grid": {
+    "attention_cost": [
+      0.25
+    ],
+    "central_rec_k": [
+      3,
+      5,
+      7
+    ],
+    "search_k_per_day": [
+      2
+    ],
+    "std_weight_misclass_hard": [
+      0.55,
+      0.7,
+      0.85
+    ],
+    "seeds": [
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307
+    ]
+  },
+  "max_runs": 80
+}

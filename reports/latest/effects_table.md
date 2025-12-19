@@ -1,0 +1,4 @@
+| category | d_hat_I_ai_minus_standard | d_hat_I_ai_minus_standard_se | d_hat_J_ai_minus_standard | d_hat_J_ai_minus_standard_se | match_rate_did | match_rate_did_se | net_welfare_did | net_welfare_did_se | lambda_star_standard | lambda_star_ai |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| easy | -0.001 | 0.0 | 0.002 | 0.0 | 0.001 | 0.002 | 0.001 | 0.001 | 0.0127 | 0.0128 |
+| hard | 0.006 | 0.0 | 0.005 | 0.0 | 0.003 | 0.002 | 0.002 | 0.002 | 0.0128 | 0.0126 |

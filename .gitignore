@@ -1,0 +1,40 @@
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+
+# Tooling caches
+.cache/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Coverage
+.coverage
+.coverage.*
+
+# Beads (keep issues.jsonl/metadata/config tracked)
+.beads/*.db*
+.beads/daemon.lock
+.beads/daemon.log
+.beads/daemon.pid
+.beads/bd.sock
+.beads/.local_version
+
+# macOS
+.DS_Store
+
+# Local-only PDFs (not distributed)
+/Optimal Matchmaking Strategy in Two-sided Marketplaces.pdf

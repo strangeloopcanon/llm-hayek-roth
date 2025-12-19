@@ -1,0 +1,10 @@
+| category | arm | match_rate | match_rate_se | net_welfare | net_welfare_se | reciprocity_obs | reciprocity_obs_se |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| easy | standard_search | 0.66 | 0.008 | 0.304 | 0.007 | 0.198 | 0.005 |
+| easy | standard_central | 0.538 | 0.008 | 0.269 | 0.006 | 0.201 | 0.004 |
+| easy | ai_search | 0.676 | 0.007 | 0.324 | 0.007 | 0.227 | 0.004 |
+| easy | ai_central | 0.586 | 0.008 | 0.297 | 0.005 | 0.229 | 0.004 |
+| hard | standard_search | 0.653 | 0.007 | 0.296 | 0.007 | 0.196 | 0.005 |
+| hard | standard_central | 0.5 | 0.006 | 0.239 | 0.005 | 0.18 | 0.003 |
+| hard | ai_search | 0.662 | 0.007 | 0.305 | 0.007 | 0.212 | 0.004 |
+| hard | ai_central | 0.55 | 0.009 | 0.271 | 0.006 | 0.215 | 0.004 |

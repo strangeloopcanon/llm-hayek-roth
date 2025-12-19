@@ -1,0 +1,14 @@
+{
+  "category": "hard",
+  "seed": 7,
+  "replications": 200,
+  "attention_cost": 0.01,
+  "max_k": 6,
+  "market_params": {
+    "n_customers": 30,
+    "n_providers": 30,
+    "epsilon": 0.1,
+    "accept_threshold": 0.25,
+    "idiosyncratic_noise_sd": 0.08
+  }
+}

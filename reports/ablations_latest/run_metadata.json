@@ -1,0 +1,21 @@
+{
+  "seed": 123,
+  "replications": 200,
+  "attention_cost": 0.25,
+  "market_params": {
+    "n_customers": 30,
+    "n_providers": 30,
+    "epsilon": 0.1,
+    "accept_threshold": 0.25,
+    "idiosyncratic_noise_sd": 0.08
+  },
+  "dimensions": [
+    "price_sensitivity",
+    "quality_focus",
+    "speed_urgency",
+    "communication_fit",
+    "weirdness_tolerance",
+    "schedule_flexibility"
+  ],
+  "skip_llm": false
+}

@@ -1,0 +1,25 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='420'>
+<style>
+text{font-family: ui-sans-serif, system-ui; fill:#111827;}
+.axis{stroke:#6b7280; stroke-width:1}
+.bar{fill:#2563eb}
+.title{font-size:18px; font-weight:700}
+.label{font-size:12px;}
+</style>
+<text class='title' x='80' y='28'>Net welfare per customer (easy, mech=search)</text>
+<line class='axis' x1='80' y1='50' x2='80' y2='340'/>
+<line class='axis' x1='80' y1='340' x2='880' y2='340'/>
+<text class='label' x='10' y='65'>net_welfare_per_customer</text>
+<rect class='bar' x='110.0' y='877909091249.1' width='140.0' height='-877909090909.1'/>
+<text class='label' x='180.0' y='358' text-anchor='middle'>form_top3_search</text>
+<text class='label' x='180.0' y='877909091243.1' text-anchor='middle'>-3.330</text>
+<rect class='bar' x='310.0' y='1064827273067.3' width='140.0' height='-1064827272727.3'/>
+<text class='label' x='380.0' y='358' text-anchor='middle'>free_text_rules_search</text>
+<text class='label' x='380.0' y='1064827273061.3' text-anchor='middle'>-4.039</text>
+<rect class='bar' x='510.0' y='933536363976.4' width='140.0' height='-933536363636.4'/>
+<text class='label' x='580.0' y='358' text-anchor='middle'>free_text_gpt_search</text>
+<text class='label' x='580.0' y='933536363970.4' text-anchor='middle'>-3.541</text>
+<rect class='bar' x='710.0' y='878172727612.7' width='140.0' height='-878172727272.7'/>
+<text class='label' x='780.0' y='358' text-anchor='middle'>chat_gpt_search</text>
+<text class='label' x='780.0' y='878172727606.7' text-anchor='middle'>-3.331</text>
+</svg>

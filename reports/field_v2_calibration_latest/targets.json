@@ -1,0 +1,31 @@
+{
+  "targets": {
+    "easy": {
+      "match_rate": 0.45,
+      "cancel_rate": 0.05,
+      "avg_price": 210.0,
+      "messages_per_job": 9.5,
+      "provider_inbox_per_day": 1.8,
+      "consumer_surplus_per_job": 20.0,
+      "provider_profit_per_job": 15.0
+    },
+    "hard": {
+      "match_rate": 0.35,
+      "cancel_rate": 0.06,
+      "avg_price": 320.0,
+      "messages_per_job": 10.5,
+      "provider_inbox_per_day": 2.0,
+      "consumer_surplus_per_job": 30.0,
+      "provider_profit_per_job": 20.0
+    }
+  },
+  "tolerance": {
+    "match_rate": 0.04,
+    "cancel_rate": 0.02,
+    "avg_price": 40.0,
+    "messages_per_job": 2.0,
+    "provider_inbox_per_day": 0.6,
+    "consumer_surplus_per_job": 20.0,
+    "provider_profit_per_job": 10.0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "seed": 123,
+  "cells_per_category": 200,
+  "market_params": {
+    "n_customers": 40,
+    "n_providers": 40,
+    "epsilon": 0.1,
+    "accept_threshold": 0.25,
+    "idiosyncratic_noise_sd": 0.08
+  },
+  "rec_k": 5,
+  "search_params": {
+    "max_rounds": 30
+  },
+  "attention_cost": 0.01
+}

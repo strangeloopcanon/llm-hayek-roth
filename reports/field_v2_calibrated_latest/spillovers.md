@@ -1,0 +1,4 @@
+| category | n_city_weeks | match_rate_neighbor_treated | match_rate_neighbor_control | inbox_neighbor_treated | inbox_neighbor_control |
+| --- | --- | --- | --- | --- | --- |
+| easy | 240 | 0.402 | 0.41 | 1.218 | 1.876 |
+| hard | 240 | 0.28 | 0.26 | 1.2 | 1.93 |
