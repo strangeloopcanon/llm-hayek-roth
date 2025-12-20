@@ -1,0 +1,11 @@
+{
+  "utility_noise_sds": [
+    0.04,
+    0.08,
+    0.15
+  ],
+  "replications": 50,
+  "seed": 42,
+  "model": "gpt-5.2",
+  "n_runs": 6
+}

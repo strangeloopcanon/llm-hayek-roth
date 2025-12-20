@@ -1,0 +1,7 @@
+utility_noise_sd,category,net_welfare_did,net_welfare_did_se,ai_central_mean,std_central_mean
+0.04,easy,-0.002,0.0015,0.1957,0.1981
+0.04,hard,-0.0065,0.0025,0.1675,0.1737
+0.08,easy,-0.0027,0.0024,0.2461,0.2487
+0.08,hard,-0.0061,0.003,0.2193,0.2258
+0.15,easy,-0.003,0.003,0.304,0.3064
+0.15,hard,-0.0069,0.0052,0.2816,0.2868
