@@ -59,5 +59,8 @@ paper-bundle:
 heterogeneity:
 	uv run python -m econ_llm_preferences_experiment.field_sim_v2_heterogeneity --out reports/heterogeneity_latest
 
+heterogeneity-llm:
+	uv run python -m econ_llm_preferences_experiment.heterogeneity_llm --out reports/heterogeneity_llm_latest
+
 clean:
 	rm -rf .mypy_cache .pytest_cache .ruff_cache reports/latest reports/latest_congestion reports/field_latest reports/field_v2_latest reports/field_v2_sensitivity_latest reports/ablations_latest reports/intakes_latest reports/field_v2_calibration_latest reports/field_v2_calibrated_latest reports/paper_latest

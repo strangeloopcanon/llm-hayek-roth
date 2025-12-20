@@ -207,3 +207,96 @@ def parse_batch_with_gpt(
         )
     inferred.sort(key=lambda a: a.agent_id)
     return ParsedBatch(inferred=tuple(inferred), raw_text=raw, usage=resp.usage)
+
+
+# --- Functions for field_sim_v2 integration (simpler interface) ---
+
+
+def weights_to_ai_text(
+    *,
+    agent_id: str,
+    weights: tuple[float, ...],
+    side: str,
+    category: str,
+    rng: random.Random,
+) -> str:
+    """
+    Generate an AI conversation transcript from raw weights.
+    Simpler interface for field_sim_v2 integration.
+    """
+    lines = [
+        "Agent: I'll ask a few quick questions to understand your preferences.",
+        f"User: (side={side}, category={category})",
+    ]
+    for dim, w in zip(DIMENSIONS, weights, strict=True):
+        lines.append(f"Agent: How important is `{dim}` for you?")
+        lvl = _level(w)
+        if rng.random() < 0.12:
+            lines.append(f"User: {dim}… {lvl}, I think.")
+        else:
+            lines.append(f"User: {dim} is {lvl} importance.")
+    tags = ["budget_sensitive"] if weights[0] >= 0.30 else []
+    tags += ["quality_first"] if weights[1] >= 0.30 else []
+    if not tags:
+        tags = ["balanced"]
+    lines.append("Agent: Any keywords/tags that describe you best?")
+    lines.append(f"User: {', '.join(tags)}")
+    return "\n".join(lines)
+
+
+def weights_to_standard_text(
+    *,
+    agent_id: str,
+    weights: tuple[float, ...],
+    side: str,
+    category: str,
+) -> str:
+    """
+    Generate a standard form text from raw weights.
+    Simpler interface for field_sim_v2 integration.
+    """
+    k = len(DIMENSIONS)
+    top_k = min(3, k)
+    top = sorted(range(k), key=lambda idx: weights[idx], reverse=True)[:top_k]
+    lines = [
+        f"Side: {side}",
+        f"Category: {category}",
+        f"Stated priorities (top-{top_k}):",
+    ]
+    for idx in top:
+        lines.append(f"- {DIMENSIONS[idx]} is {_level(weights[idx])} importance")
+    lines.append("Other dimensions are not specified.")
+    return "\n".join(lines)
+
+
+@dataclass(frozen=True)
+class ParsedWeightsBatch:
+    """Simpler result type for field_sim_v2 integration."""
+
+    weights_by_id: dict[str, tuple[float, ...]]
+    usage: OpenAIUsage
+
+
+def parse_weights_batch_with_gpt(
+    *,
+    client: OpenAIClient,
+    texts_by_id: dict[str, str],
+    max_output_tokens: int = 6000,
+) -> ParsedWeightsBatch:
+    """
+    Parse preference texts and return just the weights.
+    Simpler interface for field_sim_v2 integration.
+    """
+    prompt = _prompt_for_batch(texts_by_id.items())
+    resp = client.responses_create(input_text=prompt, max_output_tokens=max_output_tokens)
+    raw = resp.text.strip()
+
+    parsed = json.loads(raw)
+    weights_by_id: dict[str, tuple[float, ...]] = {}
+    for item in parsed:
+        agent_id = str(item["agent_id"])
+        weights = _renormalize_list(item["weights"])
+        weights_by_id[agent_id] = weights
+
+    return ParsedWeightsBatch(weights_by_id=weights_by_id, usage=resp.usage)
+
