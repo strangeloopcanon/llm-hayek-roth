@@ -3,27 +3,74 @@
 
 So what: this repo runs a minimal, reproducible 2×2 “field-experiment analog” showing how **LLM-based elicitation** can make preferences *easier to infer* and lower the ROI threshold (λ*) at which **centralized recommendations/matching** becomes worthwhile relative to decentralized search.
 
-<details>
-<summary>Why this matters</summary>
+If you only read one thing: start at `reports/paper_latest/README.md` (one table + key figures).
 
-This project is inspired by Peng Shi, “Optimal Matchmaking Strategy in Two-sided Marketplaces” (SSRN 3536086; see References).
+## At a glance
+
+**Motivated lay reader**
 
 Search is the “backup plan” when the platform can’t confidently pick the right match for you.
 We make you scroll/filter/message because the system doesn’t really understand what you want.
 
 This repo tests a mechanism-design claim: if an AI intake can reliably turn messy human intent into a structured spec, then the platform can move from “you search” to “we recommend/match” in categories where search is costly.
 
+The cool part is that this can be a threshold story, not a smooth one: better preference inference can flip which mechanism is welfare‑dominant (and when it’s worth investing in centralized matching).
+
+**Economist**
+
+Inspired by Peng Shi, “Optimal Matchmaking Strategy in Two-sided Marketplaces” (SSRN 3536086; see References): mechanism choice depends on preference density/inferability and attention/communication costs.
+
+Operationally, we do:
+- A 2×2: {standard form vs LLM elicitation} × {decentralized search vs centralized recommendations/matching}.
+- A regime sweep over elicitation depth (`k_I × k_J`) that plots net-welfare differences and the implied break-even boundary `λ*` (central wins if `λ > λ*`).
+- Stress tests: congestion via delegated outreach, field-style cluster randomization + clustered inference, and a richer FieldSim v2 with pricing/dynamics/cancellations/spillovers.
+
+Quick definitions:
+- `attention_cost` (λ): per-action cost charged for communication/attention.
+- `λ*`: break-even λ where central and search tie in net welfare; central wins if `λ > λ*`.
+- `k_I` / `k_J`: elicitation depth for customers / providers (how much structured preference signal you extract).
+- `d_hat`: preference-density proxy (how predictable acceptances are, given inferred preferences).
+
 What we measure:
-- How accurately the platform can infer who you’ll accept (a proxy for “describability”).
+- How accurately the platform can infer who you’ll accept (a proxy for “describability” / preference density).
 - How much communication/attention is spent to get a match.
-- The ROI boundary `λ*` where centralized matching starts to beat search (central wins if `λ > λ*`).
+- Net welfare under each mechanism, and the implied ROI boundary `λ*` where centralized matching starts to beat search.
 
-Money/prices:
-- The “realistic” simulation layer (`make field-v2`) includes explicit budgets, quotes, and surplus/profit accounting.
+**Framing**
+- Not “LLMs always improve markets” (effects vary by regime).
+- Yes “LLMs can move you across a threshold where central mechanisms become viable,” summarized by the regime map ROI boundary `λ*` and the hard-category interaction.
 
-If you only read one output: start at `reports/paper_latest/README.md`.
+## Results (inline)
+
+Headline results (from `reports/paper_latest/`):
+- FieldSim v2 (hard): net welfare per customer is highest in `ai_central` (18.58) vs 14.13–14.48 in the other arms.
+- Regime sweep (hard): `λ*` falls from 0.014 (`k_I=1,k_J=1`) to 0.0123 (`k_I=6,k_J=6`).
+- Delegated outreach congestion: saturation 1.0 vs 0.0 reduces net welfare per customer by ~0.883 (hard).
+
+Net welfare per customer (FieldSim v2, hard; higher is better):
+
+| intake | search | central |
+| --- | --- | --- |
+| standard | 14.13 | 14.48 |
+| LLM | 14.27 | 18.58 |
+
+Full table: `reports/paper_latest/key_results.md`.
+
+![Regime map: ROI boundary λ* (hard)](reports/paper_latest/fig_regime_map_hard_lambda_star.svg)
+![Regime map: Central − Search net welfare (hard)](reports/paper_latest/fig_regime_map_hard_net_welfare_diff.svg)
+![FieldSim v2: net welfare by arm (hard)](reports/paper_latest/fig_hard_net_welfare.svg)
+
+<details>
+<summary>More plots</summary>
+
+![Delegated outreach: net welfare vs saturation (hard)](reports/paper_latest/fig_hard_net_welfare_vs_saturation.svg)
+![FieldSim v2: reciprocity proxy vs rank (hard)](reports/paper_latest/fig_hard_reciprocity_curve.svg)
 
 </details>
+
+**Money/prices**
+
+The “realistic” simulation layer (`make field-v2`) includes explicit budgets, quotes, cancellations, and surplus/profit accounting (GPT is used for parsing/elicitation only).
 
 ## One-command run
 
