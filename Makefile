@@ -56,6 +56,9 @@ field-v2-calibrated: calibrate
 paper-bundle:
 	uv run python -m econ_llm_preferences_experiment.paper_bundle --out reports/paper_latest
 
+paper-bundle-llm:
+	uv run python -m econ_llm_preferences_experiment.paper_bundle_llm --out reports/paper_llm_latest
+
 heterogeneity:
 	uv run python -m econ_llm_preferences_experiment.field_sim_v2_heterogeneity --out reports/heterogeneity_latest
 

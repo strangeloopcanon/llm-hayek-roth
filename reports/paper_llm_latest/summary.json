@@ -1,0 +1,11 @@
+{
+  "n_rows": 25,
+  "sources": {
+    "main_exp": "reports/latest",
+    "ablations": "reports/ablations_latest",
+    "congestion": "reports/latest_congestion",
+    "heterogeneity": "reports/heterogeneity_llm_latest"
+  },
+  "llm_model": "gpt-5.2",
+  "synthetic_results_included": false
+}
